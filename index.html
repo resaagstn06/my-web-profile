@@ -1,16 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Snake</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Mahasiswa - Resa Agustina</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <canvas id="canvas"></canvas>
-  <script src="render.js"></script><!-- defines canvas, ctx, draw() -->
-  <script src="input.js"></script><!-- attaches keyboard + touch listeners -->
-  <script src="game.js"></script> <!-- state, loop, boot -->
+  <header id="main-header">
+    <h1>Resa Agustina</h1>
+    <p class="subtitle">Mahasiswa D4 Teknologi Rekayasa Perangkat Lunak</p>
+    <nav>
+      <a href="#tentang">Tentang</a>
+      <a href="#keahlian">Keahlian</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+  </header>
 
+  <main>
+    <section id="tentang" class="card">
+      <h2>Tentang Saya</h2>
+      <p>Saya adalah mahasiswa semester 3 Program Studi D4 TRPL di Politeknik Indonusa Surakarta yang sedang mempelajari pengembangan web modern.</p>
+      <button id="btn-sapa" class="btn-primary">Tampilkan Pesan Sambutan</button>
+      <p id="pesan-dinamis" class="highlight-text"></p>
+    </section>
+
+    <section id="keahlian" class="card">
+      <h2>Keahlian Dasar Web</h2>
+      <ul class="skill-list">
+        <li>HTML5 Semantic Structure</li>
+        <li>CSS3 Box Model & Flexbox</li>
+        <li>JavaScript DOM Manipulation</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer id="kontak">
+    <p>&copy; 2026 Resa Agustina - Politeknik Indonusa Surakarta</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
